@@ -1,0 +1,27 @@
+- npm init  // inicializa el proyecto de nodeJS
+nos realiza unas cuantas preguntas de configuracion y luego crea el archivo package.json
+
+se debe crear la carpeta fuente src "source" y se crea el archivo inicial index.json
+
+dentro del .json se debe cambiar la referencia del main al archivo index.js dentro de la carpeta src
+y agregar las ejecuciones de node mas comunes como:
+"dev": "nodemon src/index.js",
+"start": "node src/index.js",
+"build": "node src/index.js",
+"console": "echo 'Esto es un echo2!!!!!'"
+
+dependiendo de la forma de trabajar de cada empresa
+
+
+instalar la dependencia de terceros nodemon que ofrece la facilidad de recargar automaticamente la consola al ver un cambio
+
+npm install --save-dev nodemon
+
+
+-formas de importar modulos desde distintos archivos, la nueva forma es la misma que usan react o angular
+se debe agragar en el .json "type":"module" en el main
+se recomienda siempre usar la desestructuracion de los modulos al importarlos para asi poder acceder a sus componentes de una
+forma mas simple
+
+import {getTitle, getAuthor} from "./functions.js" => import functions from "./functions.js"
+

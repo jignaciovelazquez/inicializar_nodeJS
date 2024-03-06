@@ -1,0 +1,19 @@
+{
+  "name": "projet-inicio",
+  "version": "0.0.1",
+  "description": "primer proyecto de como se inicializa un projet en nodeJS",
+  "main": "src/index.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "build": "node src/index.js",
+    "console": "echo 'Esto es un echo2!!!!!'"
+  },
+  "author": "nagciov",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
